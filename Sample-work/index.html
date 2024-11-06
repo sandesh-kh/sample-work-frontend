@@ -2,127 +2,166 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sandesh K H Portfolio</title>
-    <!-- Tailwind CSS via CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init({
-                publicKey: "NrghcO-6bE_IqKUWJ",
-            });
-        })();
-    </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sandesh K H Portfolio</title>
+  <!-- Tailwind CSS via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "NrghcO-6bE_IqKUWJ",
+      });
+    })();
+  </script>
 </head>
 
 <body class="bg-gray-100 text-gray-800">
 
-    <!-- Navbar -->
-    <header class="bg-white shadow-md">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <h1 class="text-2xl font-bold">Sandesh K H</h1>
-            <nav>
-                <a href="#services" class="mx-3 text-gray-600 hover:text-blue-600">Services</a>
-                <a href="#portfolio" class="mx-3 text-gray-600 hover:text-blue-600">Portfolio</a>
-                <a href="#contact" class="mx-3 text-gray-600 hover:text-blue-600">Contact</a>
-            </nav>
+  <!-- Navbar -->
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Sandesh K H</h1>
+      <nav>
+        <a href="#services" class="mx-3 text-gray-600 hover:text-blue-600">Services</a>
+        <a href="#portfolio" class="mx-3 text-gray-600 hover:text-blue-600">Portfolio</a>
+        <a href="#contact" class="mx-3 text-gray-600 hover:text-blue-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-20 bg-cover bg-center"
+    style="background-image: url('images/background.jpg');">
+    <div class="bg-black bg-opacity-50 p-10 rounded-lg">
+      <h2 class="text-4xl font-bold text-white mb-4">I Build Amazing Websites</h2>
+      <p class="text-white text-lg mb-6">Freelance Developer specialized in modern web technologies</p>
+      <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-500">Hire Me</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="container mx-auto px-4 py-16">
+    <h2 class="text-3xl font-bold text-center mb-10">Services</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="p-6 bg-white rounded-lg shadow-md text-center">
+        <h3 class="text-xl font-semibold mb-4">Full-Stack Development</h3>
+        <p class="text-gray-600">Robust and scalable web applications developed with a full stack approach using Java
+          Spring Boot for the backend, Angular for the frontend, and MySQL for efficient data management. This setup,
+          combined with CI/CD automation, ensures seamless deployment, high performance, and a responsive user
+          experience across all devices. Perfect for applications that require reliable data handling, secure API
+          interactions, and a smooth, modern interface.</p>
+      </div>
+      <div class="p-6 bg-white rounded-lg shadow-md text-center">
+        <h3 class="text-xl font-semibold mb-4">Web Development</h3>
+        <p class="text-gray-600">High-quality, responsive websites using modern technologies.</p>
+      </div>
+      <div class="p-6 bg-white rounded-lg shadow-md text-center">
+        <h3 class="text-xl font-semibold mb-4">UI/UX Design</h3>
+        <p class="text-gray-600">User-friendly interfaces with a focus on usability and experience.</p>
+      </div>
+      <div class="p-6 bg-white rounded-lg shadow-md text-center">
+        <h3 class="text-xl font-semibold mb-4">Consultation</h3>
+        <p class="text-gray-600">Helping you build and plan your web project from start to finish.</p>
+      </div>
+      <div class="p-6 bg-white rounded-lg shadow-md text-center">
+        <h3 class="text-xl font-semibold mb-4">Android Development</h3>
+        <p class="text-gray-600">High-quality, user-friendly Android applications leveraging the latest technologies and
+          best practices. Apps are optimized for performance, responsive design, and seamless user experiences across
+          various devices and screen sizes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="bg-gray-200 py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-10">Portfolio</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img src="images/datatalk.png" alt="Datatalk Project Image" class="rounded-lg mb-4" />
+          <h3 class="font-semibold text-lg">Datatalk Knowledge Solutions Website</h3>
+          <p class="text-gray-600">A professional, responsive website designed to showcase the comprehensive knowledge
+            and solutions offered by Datatalk. The website emphasizes clarity and usability, making it easy for users
+            to explore services, resources, and insights. Built with modern web technologies, it includes interactive
+            elements, a visually appealing design, and seamless navigation. The project integrates various sections
+            such as services, About and a contact form, all optimized for both desktop and mobile devices to ensure an
+            engaging and accessible user experience.</p>
         </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="text-center py-20 bg-cover bg-center"
-        style="background-image: url('https://via.placeholder.com/1200x600');">
-        <div class="bg-black bg-opacity-50 p-10 rounded-lg">
-            <h2 class="text-4xl font-bold text-white mb-4">I Build Amazing Websites</h2>
-            <p class="text-white text-lg mb-6">Freelance Developer specialized in modern web technologies</p>
-            <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-500">Hire Me</a>
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img src="images/pledgeacademy.png" alt="Pledge Academy Project Image" class="rounded-lg mb-4" />
+          <h3 class="font-semibold text-lg">Pledge Academy Website</h3>
+          <p class="text-gray-600">A WordPress-powered website developed to support Pledge Academy's mission of
+            education and awareness. This site serves as an informative platform, providing resources for individuals
+            interested in learning about dyslexia, ADHD, and related topics.
+            The website combines clear navigation, responsive design, and valuable content, making it an accessible,
+            comprehensive hub for education and community engagement.</p>
         </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="container mx-auto px-4 py-16">
-        <h2 class="text-3xl font-bold text-center mb-10">Services</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="p-6 bg-white rounded-lg shadow-md text-center">
-                <h3 class="text-xl font-semibold mb-4">Web Development</h3>
-                <p class="text-gray-600">High-quality, responsive websites using modern technologies.</p>
-            </div>
-            <div class="p-6 bg-white rounded-lg shadow-md text-center">
-                <h3 class="text-xl font-semibold mb-4">UI/UX Design</h3>
-                <p class="text-gray-600">User-friendly interfaces with a focus on usability and experience.</p>
-            </div>
-            <div class="p-6 bg-white rounded-lg shadow-md text-center">
-                <h3 class="text-xl font-semibold mb-4">Consultation</h3>
-                <p class="text-gray-600">Helping you build and plan your web project from start to finish.</p>
-            </div>
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img src="images/celebratehealth.png" alt="Celebrate Health Project Image" class="rounded-lg mb-4" />
+          <h3 class="font-semibold text-lg">Celebrate Health Android application</h3>
+          <p class="text-gray-600">Celebrate Health is your go-to online family pharmacist, designed to streamline the
+            process of ordering medicines and healthcare products from the convenience of your mobile device. Say
+            goodbye to long queues and delays—Celebrate Health puts your healthcare needs just a tap away. Key features
+            include:Prescription Uploads, Quick Call Ordering, Product Information. With Celebrate Health, you gain a
+            fast, reliable, and user-friendly way to manage your
+            health essentials, all in one place.
+          </p>
         </div>
-    </section>
+      </div>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="bg-gray-200 py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-10">Portfolio</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white p-4 rounded-lg shadow-md">
-                    <img src="https://via.placeholder.com/400x300" alt="Project Image" class="rounded-lg mb-4" />
-                    <h3 class="font-semibold text-lg">Project Name</h3>
-                    <p class="text-gray-600">Short description of the project.</p>
-                </div>
-                <!-- Repeat the project card for more items -->
-            </div>
-        </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="container mx-auto px-4 py-16">
-        <h2 class="text-3xl font-bold text-center mb-10">Contact Me</h2>
-        <form id="contact-form" class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-md">
-            <div class="mb-6">
-                <label for="name" class="block text-gray-700 mb-2">Name</label>
-                <input type="text" id="name" class="w-full p-3 rounded-lg border border-gray-300" />
-            </div>
-            <div class="mb-6">
-                <label for="email" class="block text-gray-700 mb-2">Email</label>
-                <input type="email" id="email" class="w-full p-3 rounded-lg border border-gray-300" />
-            </div>
-            <div class="mb-6">
-                <label for="message" class="block text-gray-700 mb-2">Message</label>
-                <textarea id="message" class="w-full p-3 rounded-lg border border-gray-300" rows="5"></textarea>
-            </div>
-            <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-500">Send
-                Message</button>
-        </form>
-    </section>
+  <!-- Contact Section -->
+  <section id="contact" class="container mx-auto px-4 py-16">
+    <h2 class="text-3xl font-bold text-center mb-10">Contact Me</h2>
+    <form id="contact-form" class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-md">
+      <div class="mb-6">
+        <label for="name" class="block text-gray-700 mb-2">Name</label>
+        <input type="text" id="name" class="w-full p-3 rounded-lg border border-gray-300" />
+      </div>
+      <div class="mb-6">
+        <label for="email" class="block text-gray-700 mb-2">Email</label>
+        <input type="email" id="email" class="w-full p-3 rounded-lg border border-gray-300" />
+      </div>
+      <div class="mb-6">
+        <label for="message" class="block text-gray-700 mb-2">Message</label>
+        <textarea id="message" class="w-full p-3 rounded-lg border border-gray-300" rows="5"></textarea>
+      </div>
+      <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-500">Send
+        Message</button>
+    </form>
+  </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-6 text-center">
-        <p>&copy; 2024 Sandesh K H. All rights reserved.</p>
-    </footer>
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 text-center">
+    <p>&copy; 2024 Sandesh K H. All rights reserved.</p>
+  </footer>
 
-    <script>
-        document.getElementById("contact-form").addEventListener("submit", function (event) {
-            event.preventDefault();
+  <script>
+    document.getElementById("contact-form").addEventListener("submit", function (event) {
+      event.preventDefault();
 
-            // Collect form data
-            const templateParams = {
-                name: document.getElementById("name").value,
-                email: document.getElementById("email").value,
-                message: document.getElementById("message").value
-            };
+      // Collect form data
+      const templateParams = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("message").value
+      };
 
-            // Send email using EmailJS
-            emailjs.send("service_3fuccog", "template_nkvgkkj", templateParams)
-                .then(function (response) {
-                    alert("Email sent successfully!");
-                }, function (error) {
-                    alert("Failed to send email. Please try again later.");
-                    console.error("Error:", error);
-                });
+      // Send email using EmailJS
+      emailjs.send("service_3fuccog", "template_nkvgkkj", templateParams)
+        .then(function (response) {
+          alert("Email sent successfully!");
+        }, function (error) {
+          alert("Failed to send email. Please try again later.");
+          console.error("Error:", error);
         });
-    </script>
+    });
+  </script>
 
 </body>
 

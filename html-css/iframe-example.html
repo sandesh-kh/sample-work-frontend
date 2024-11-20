@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iframe Demonstration</title>
+  <style>
+    iframe {
+      border: 2px solid #007bff; /* Add a border around the iframe */
+      border-radius: 5px;        /* Rounded corners */
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Iframe Example</h1>
+
+  <!-- Example 1: Embedding a YouTube Video -->
+  <h2>Embedded YouTube Video:</h2>
+  <iframe 
+    src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+    width="560" 
+    height="315" 
+    title="YouTube Video Example" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+  <!--
+    Explanation:
+    - src: URL of the YouTube video.
+    - width & height: Dimensions of the iframe.
+    - allow: Permissions granted to the iframe (e.g., autoplay, fullscreen).
+    - allowfullscreen: Enables fullscreen mode for the video.
+  -->
+
+  <!-- Example 2: Embedding a Google Map -->
+  <h2>Embedded Google Map:</h2>
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509372!2d144.953735315317!3d-37.81627977975195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf0727d807a3bc51e!2sFlinders%20Street%20Station!5e0!3m2!1sen!2sau!4v1611177925646!5m2!1sen!2sau" 
+    width="600" 
+    height="450" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    title="Google Map Example">
+  </iframe>
+  <!--
+    Explanation:
+    - src: URL of the embedded map with location parameters.
+    - width & height: Dimensions of the map iframe.
+    - loading: Enables lazy loading to improve performance.
+    - style: Inline CSS for additional styling.
+    -->
+
+  <!-- Example 3: Embedding Internal Content -->
+  <h2>Embedded Internal Page:</h2>
+  <iframe 
+    src="about.html" 
+    width="800" 
+    height="300" 
+    title="Internal Page Example">
+  </iframe>
+  <!--
+    Explanation:
+    - src: URL of an internal HTML file (relative to the current file location).
+    - width & height: Dimensions of the iframe.
+    -->
+
+</body>
+
+</html>

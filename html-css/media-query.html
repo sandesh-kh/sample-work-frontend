@@ -1,0 +1,148 @@
+What is a Media Query?
+A media query is a CSS technique introduced in CSS3 that allows you to apply specific styles to a webpage based on the characteristics of the user's device, such as screen size, resolution, orientation, and more. Media queries are fundamental for building responsive designs, ensuring that your website looks good on all devices, from desktops to smartphones.
+
+Syntax of Media Query
+@media media_type (media_feature) {
+  /* CSS rules here */
+}
+@media: Defines the media query block.
+media_type: Specifies the type of device, such as screen, print, or all. (Optional; defaults to all.)
+media_feature: Specifies a condition, such as screen width, height, orientation, etc.
+CSS Rules: The styles to apply when the condition is true.
+Common Media Features
+Media Feature	Description	                                            Example
+min-width	    Sets styles if the viewport width is at least X pixels	@media (min-width: 600px)
+max-width	    Sets styles if the viewport width is at most X pixels	@media (max-width: 600px)
+min-height	    Sets styles if the viewport height is at least X pixels	@media (min-height: 400px)
+orientation	    Matches device orientation (landscape or portrait)	    @media (orientation: portrait)
+resolution	    M atches screen resolution (DPI or DPCM)	            @media (min-resolution: 300dpi)
+Example Media Queries
+1. Change Background Color Based on Width
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Query Example</title>
+  <style>
+    body {
+      background-color: lightblue; /* Default background */
+      font-family: Arial, sans-serif;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        background-color: lightgreen; /* Background for small screens */
+      }
+    }
+
+    @media (min-width: 601px) and (max-width: 1200px) {
+      body {
+        background-color: orange; /* Background for medium screens */
+      }
+    }
+
+    @media (min-width: 1201px) {
+      body {
+        background-color: lightpink; /* Background for large screens */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Media Query Example</h1>
+  <p>Resize the browser window to see the background color change.</p>
+</body>
+
+</html>
+2. Responsive Grid Layout
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Grid</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 1fr; /* Single column by default */
+      gap: 10px;
+    }
+
+    .box {
+      padding: 20px;
+      background-color: lightgray;
+      text-align: center;
+    }
+
+    @media (min-width: 600px) {
+      .container {
+        grid-template-columns: 1fr 1fr; /* Two columns for larger screens */
+      }
+    }
+
+    @media (min-width: 900px) {
+      .container {
+        grid-template-columns: 1fr 1fr 1fr; /* Three columns for wide screens */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Responsive Grid Example</h1>
+  <div class="container">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+    <div class="box">Box 4</div>
+  </div>
+</body>
+
+</html>
+How Media Queries Work
+Evaluate Conditions:
+The browser checks the device's properties (e.g., screen width or orientation).
+Apply Styles:
+If the conditions match, the styles inside the media query block are applied.
+Use Cases of Media Queries
+Responsive Web Design:
+Create layouts that adjust to different screen sizes (mobile, tablet, desktop).
+Optimized Print Styles:
+Apply specific styles when printing documents.
+Example:
+@media print {
+  body {
+    font-size: 12pt;
+    color: black;
+  }
+}
+Dark Mode:
+Adapt styles based on user preferences.
+Example:
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: white;
+  }
+}
+
+Best Practices
+Use mobile-first design:
+Start with styles for smaller screens and add media queries for larger screens.
+Example:
+body {
+  font-size: 16px; /* Default for mobile */
+}
+@media (min-width: 768px) {
+  body {
+    font-size: 18px; /* Larger screens */
+  }
+}
+Combine multiple conditions using and or or.
+Test on multiple devices and browsers.

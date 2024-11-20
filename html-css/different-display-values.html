@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display Property Demonstration</title>
+  <style>
+    .block {
+      display: block;
+      background-color: lightblue;
+      margin: 10px 0;
+      padding: 10px;
+    }
+
+    .inline {
+      display: inline;
+      background-color: lightgreen;
+      margin: 5px;
+      padding: 5px;
+    }
+
+    .inline-block {
+      display: inline-block;
+      background-color: lightcoral;
+      margin: 5px;
+      padding: 10px;
+      width: 100px;
+      text-align: center;
+    }
+
+    .none {
+      display: none;
+    }
+
+    .flex {
+      display: flex;
+      background-color: lightgray;
+      padding: 10px;
+      gap: 10px;
+    }
+
+    .flex div {
+      background-color: lavender;
+      padding: 10px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      background-color: lightyellow;
+      padding: 10px;
+    }
+
+    .grid div {
+      background-color: lightpink;
+      padding: 10px;
+    }
+
+    .table {
+      display: table;
+      background-color: lightgoldenrodyellow;
+      padding: 10px;
+      width: 100%;
+    }
+
+    .table-row {
+      display: table-row;
+    }
+
+    .table-cell {
+      display: table-cell;
+      border: 1px solid black;
+      padding: 5px;
+    }
+
+    .list-item {
+      display: list-item;
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>CSS Display Property Examples</h1>
+
+  <!-- Block -->
+  <div class="block">This is a block element.</div>
+
+  <!-- Inline -->
+  <span class="inline">Inline Element 1</span>
+  <span class="inline">Inline Element 2</span>
+
+  <!-- Inline-block -->
+  <div class="inline-block">Inline-block 1</div>
+  <div class="inline-block">Inline-block 2</div>
+
+  <!-- None -->
+  <div class="none">This element is hidden (display: none).</div>
+
+  <!-- Flex -->
+  <div class="flex">
+    <div>Flex Item 1</div>
+    <div>Flex Item 2</div>
+    <div>Flex Item 3</div>
+  </div>
+
+  <!-- Grid -->
+  <div class="grid">
+    <div>Grid Item 1</div>
+    <div>Grid Item 2</div>
+    <div>Grid Item 3</div>
+    <div>Grid Item 4</div>
+  </div>
+
+  <!-- Table -->
+  <div class="table">
+    <div class="table-row">
+      <div class="table-cell">Row 1, Cell 1</div>
+      <div class="table-cell">Row 1, Cell 2</div>
+    </div>
+    <div class="table-row">
+      <div class="table-cell">Row 2, Cell 1</div>
+      <div class="table-cell">Row 2, Cell 2</div>
+    </div>
+  </div>
+
+  <!-- List Item -->
+  <div class="list-item">This is a list item.</div>
+
+  <!--
+
+    Use Cases:
+block: For divs, sections, and full-width content.
+inline: For small, inline text or spans.
+inline-block: For buttons, cards, or elements with adjustable dimensions.
+none: To hide elements conditionally.
+flex and grid: For modern, responsive layouts.
+table: For tabular data.
+list-item: For navigation menus or lists.
+
+
+  -->
+</body>
+
+</html>

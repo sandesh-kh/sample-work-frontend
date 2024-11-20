@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class vs ID in HTML and CSS</title>
+  <style>
+    /* CSS for class selector */
+    .highlight {
+      background-color: yellow;
+      font-weight: bold;
+    }
+
+    /* CSS for ID selector */
+    #unique-element {
+      color: red;
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Using class for common styling -->
+  <p class="highlight">This paragraph has the "highlight" class, making it bold and yellow.</p>
+  <p class="highlight">This is another paragraph with the same "highlight" class.</p>
+
+  <!-- Using ID for unique styling -->
+  <p id="unique-element">This paragraph has a unique "id" and is styled with a different color and font size.</p>
+  
+</body>
+<!--
+
+    Differences Between class and id:
+Purpose:
+class: Used to group multiple elements together that share the same style. A single element can have multiple classes.
+id: Used to uniquely identify a single element on the page. An id should be unique within the document, meaning no two elements should have the same id.
+
+Usage:
+class: Can be applied to multiple elements (e.g., several paragraphs, divs, etc.), and you can use the same class on multiple elements.
+id: Can only be applied to a single element per page, as each id must be unique.
+
+CSS Selector Specificity:
+class: Has a lower specificity than id. It is selected using a period (.) in CSS.
+id: Has a higher specificity than class. It is selected using a hash (#) in CSS.
+H
+TML Example:
+class: Multiple elements can have the same class.
+id: Only one element can have a specific id.
+
+Summary of Selectors:
+Class (.): Targets elements with a specific class. Can be used on multiple elements.
+ID (#): Targets a single element with a specific id.
+Element (e.g., p, div): Targets all elements of that type.
+Universal (*): Targets all elements.
+Attribute ([attr=value]): Targets elements based on an attribute.
+Descendant (space): Targets nested elements.
+Child (>): Targets direct children.
+Pseudo-classes (:): Targets elements in a specific state.
+Pseudo-elements (::): Targets part of an element.
+-->
+
+</html>

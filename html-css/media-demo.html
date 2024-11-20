@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media and Figure Tag Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    .media-section {
+      margin-bottom: 30px;
+    }
+    figure {
+      text-align: center;
+      margin: 20px auto;
+      max-width: 600px;
+    }
+    figure img {
+      max-width: 100%;
+      height: auto;
+    }
+    figcaption {
+      font-size: 0.9em;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>HTML Media and Figure Tags</h1>
+
+  <!-- Video Example -->
+  <section class="media-section">
+    <h2>Video Example</h2>
+    <p>This is a demonstration of the <code>&lt;video&gt;</code> tag:</p>
+    <video controls width="600">
+      <!-- Source for the video -->
+      <source src="sample-video.mp4" type="video/mp4">
+      <source src="sample-video.ogg" type="video/ogg">
+      <!-- Fallback message for browsers that do not support the video tag -->
+      Your browser does not support the video tag.
+    </video>
+    <p><strong>Note:</strong> The controls attribute allows the user to play, pause, or adjust the volume.</p>
+  </section>
+
+  <!-- Audio Example -->
+  <section class="media-section">
+    <h2>Audio Example</h2>
+    <p>This is a demonstration of the <code>&lt;audio&gt;</code> tag:</p>
+    <audio controls>
+      <!-- Source for the audio -->
+      <source src="sample-audio.mp3" type="audio/mpeg">
+      <source src="sample-audio.ogg" type="audio/ogg">
+      <!-- Fallback message for browsers that do not support the audio tag -->
+      Your browser does not support the audio element.
+    </audio>
+    <p><strong>Note:</strong> Similar to the video tag, the controls attribute provides playback controls.</p>
+  </section>
+
+  <!-- Image and Figure Example -->
+  <section class="media-section">
+    <h2>Image and Figure Example</h2>
+    <p>The <code>&lt;figure&gt;</code> tag is used to group media content like images with captions:</p>
+    <figure>
+      <!-- Image element -->
+      <img src="sample-image.jpg" alt="A beautiful landscape">
+      <!-- Caption for the image -->
+      <figcaption>A beautiful landscape captured during sunrise.</figcaption>
+    </figure>
+    <p><strong>Note:</strong> The <code>&lt;figcaption&gt;</code> tag provides a caption for the figure content.</p>
+  </section>
+
+</body>
+
+</html>

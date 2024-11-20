@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Optimized Asset Loading</title>
+
+  <!--
+    Technique 1: Minify CSS
+    - Use minified CSS files to reduce file size and load faster.
+    - Example: Using "styles.min.css" instead of "styles.css".
+  -->
+  <link rel="stylesheet" href="styles.min.css">
+
+  <!--
+    Technique 2: Use Async/Defer for Scripts
+    - Async: Loads the script while HTML parsing continues. Executes immediately after loading.
+    - Defer: Loads the script while HTML parsing continues. Executes after HTML parsing is complete.
+  -->
+  <script src="analytics.js" async></script>
+  <script src="main.js" defer></script>
+
+  <!--
+    Technique 3: Lazy Loading for Images
+    - Use the "loading" attribute with "lazy" to defer loading images until they are in the viewport.
+  -->
+</head>
+
+<body>
+  <!--
+    Technique 4: Use Optimized Image Formats
+    - Use modern image formats like WebP for smaller file sizes and better quality.
+  -->
+  <img src="image.webp" alt="Optimized Image" loading="lazy">
+
+  <!--
+    Technique 5: Content Delivery Network (CDN)
+    - Use a CDN to serve assets from locations closer to the user for faster load times.
+  -->
+  <link rel="stylesheet" href="https://cdn.example.com/library.min.css">
+
+  <!--
+    Technique 6: Combine CSS and JS
+    - Combine multiple CSS or JS files into a single file to reduce HTTP requests.
+    -->
+
+  <!--
+    Technique 7: Use Fonts Efficiently
+    - Preload fonts to make them available early and reduce render-blocking issues.
+  -->
+  <link rel="preload" href="font.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+  <!-- Example Content -->
+  <h1>Optimized Website Asset Loading</h1>
+  <p>This webpage demonstrates techniques for optimizing asset loading.</p>
+
+  <!--
+    Technique 8: Gzip Compression
+    - Enable gzip or Brotli compression on the server to reduce asset sizes.
+    - This is configured server-side, not in the HTML file.
+  -->
+
+  <!--
+    Technique 9: Cache Control
+    - Set caching headers on the server to enable browser caching of static assets.
+    -->
+
+  <!-- Example Footer -->
+  <footer>
+    <p>Footer content here.</p>
+  </footer>
+
+  <!--
+    Technique 10: Reduce Inline CSS/JS
+    - Avoid excessive inline styles or scripts to keep the HTML clean.
+  -->
+
+  <!--
+
+    Key Optimization Techniques in the File:
+Minify CSS and JS:
+Use .min.css and .min.js files to reduce asset size.
+Async/Defer for Scripts:
+Use async for scripts that don’t depend on others (e.g., analytics).
+Use defer for scripts that need the DOM to be fully parsed first.
+Lazy Loading Images:
+Add loading="lazy" to <img> tags to delay loading images until they are needed.
+Modern Image Formats:
+Use formats like WebP, AVIF for images to reduce file size.
+Content Delivery Network (CDN):
+Serve assets like CSS, JS, and images via a CDN for faster loading.
+Preload Fonts:
+Use <link rel="preload"> to load fonts early without blocking rendering.
+Combine Files:
+Merge CSS and JS files to minimize HTTP requests.
+Compression (Server-side):
+Enable gzip or Brotli compression on the server to reduce file sizes.
+Cache Control (Server-side):
+Use caching headers to enable long-term caching of static assets.
+Reduce Inline CSS/JS:
+Externalize styles and scripts to keep HTML lean.
+
+Benefits of These Optimizations:
+Faster Loading Times: Reduced asset size and optimized loading strategies speed up rendering.
+Improved SEO: Better performance can improve search rankings.
+Enhanced User Experience: Faster websites retain more users and reduce bounce rates.
+Bandwidth Savings: Smaller assets mean less data is transferred, saving bandwidth.
+  -->
+</body>
+
+</html>

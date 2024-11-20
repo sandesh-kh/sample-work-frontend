@@ -1,0 +1,68 @@
+/*
+
+What is DOM?
+DOM (Document Object Model) is a programming interface for web documents. It represents the structure of a webpage as a tree-like hierarchy of objects, allowing developers to manipulate the content, structure, and styling of a document dynamically using JavaScript.
+
+Key Features of the DOM:
+Tree Structure:
+The DOM represents a web page as a tree of nodes.
+Nodes can represent elements, attributes, text, comments, etc.
+Programming Interface:
+The DOM is platform-independent and can be accessed/manipulated using JavaScript.
+Live Representation:
+Changes made to the DOM tree are reflected immediately in the web page.
+Hierarchy:
+The DOM tree has a root node (document) and is hierarchical, allowing traversal and targeting of specific elements.
+Basic Terms:
+Node:
+Everything in the DOM is a node.
+Types include element nodes, text nodes, attribute nodes, etc.
+Element:
+Represents an HTML tag (e.g., <div>, <p>).
+Document:
+The root object of the DOM, representing the entire HTML document.
+
+Common DOM Manipulation Methods:
+Accessing Elements:
+document.getElementById("id"): Select an element by its id.
+document.querySelector("selector"): Select the first element matching a CSS selector.
+document.querySelectorAll("selector"): Select all elements matching a CSS selector.
+Modifying Content:
+.textContent: Change the text content of an element.
+.innerHTML: Change the inner HTML of an element.
+Manipulating Attributes:
+.setAttribute("attribute", "value"): Set or update an attribute.
+.getAttribute("attribute"): Get the value of an attribute.
+Adding/Removing Classes:
+.classList.add("className"): Add a class.
+.classList.remove("className"): Remove a class.
+Creating/Removing Elements:
+document.createElement("tag"): Create a new element.
+parentElement.appendChild(newElement): Append an element to a parent.
+parentElement.removeChild(childElement): Remove a child element.
+
+Advantages of the DOM:
+Allows dynamic updates to the web page without reloading.
+Facilitates interactivity (e.g., animations, user input handling).
+Makes it easy to traverse, search, and manipulate elements.
+
+*/
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM Example</title>
+  </head>
+  <body>
+    <h1 id="title">Welcome to the DOM!</h1>
+    <p class="description">This is a simple paragraph.</p>
+    <button onclick="changeTitle()">Click Me</button>
+    <script>
+      // JavaScript code can manipulate the DOM here
+      function changeTitle() {
+        const titleElement = document.getElementById('title'); // Access the <h1> element
+        titleElement.textContent = 'DOM Manipulation in Action!'; // Update its content
+      }
+    </script>
+  </body>
+</html>
